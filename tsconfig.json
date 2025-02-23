@@ -1,7 +1,13 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "outDir": "dist", 
+    "module": "CommonJS", 
+    "target": "ES6", 
+    "declaration": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true, 
+   "rootDir": "src"
+  },
+  "include": ["src"], // Include source files
+  "exclude": ["node_modules", "dist", "test"] // Exclude unnecessary files
 }
